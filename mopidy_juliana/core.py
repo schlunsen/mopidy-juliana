@@ -16,7 +16,7 @@ from tornado.httpclient import AsyncHTTPClient, HTTPRequest
 from pathlib import Path
 
 from . import Extension
-from .system import julianaSystemThread
+from .system import JulianaSystemThread
 
 if sys.platform == "win32":
     import ctypes
