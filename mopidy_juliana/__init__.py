@@ -23,7 +23,7 @@ class Extension(ext.Extension):
     def get_config_schema(self):
         schema = super().get_config_schema()
         # TODO: Comment in and edit, or remove entirely
-        #schema["username"] = config.String()
+        schema["data_dir"] = config.String()
         #schema["password"] = config.Secret()
         return schema
 
