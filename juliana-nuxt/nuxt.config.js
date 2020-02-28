@@ -7,7 +7,7 @@ export default {
   */
   head: {
     titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    title: 'Juliana Music Player',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -21,6 +21,9 @@ export default {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  router: {
+    base: process.env.NODE_ENV === 'dev' ? '/' : '/juliana/'
+  },
   /*
   ** Global CSS
   */
@@ -30,12 +33,14 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/websocket.js'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
     '@nuxtjs/vuetify',
+    
   ],
   /*
   ** Nuxt.js modules
@@ -44,6 +49,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    '@nuxtjs/toast',
   ],
   /*
   ** Axios module configuration

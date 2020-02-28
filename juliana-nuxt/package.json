@@ -12,15 +12,20 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/toast": "^3.3.0",
+    "mopidy": "^1.0.1",
+    "nuxt": "^2.0.0",
+    "verge": "^1.10.2"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "vue-jest": "^4.0.0-0"
   }
 }

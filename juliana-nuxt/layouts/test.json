@@ -1,0 +1,410 @@
+{
+  "jsonrpc": "2.0",
+  "id": 27,
+  "result": [
+    {
+      "__model__": "SearchResult",
+      "uri": "youtube:search",
+      "tracks": [
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Mia Lykke Nielsen trains Dutch show jumper. When Horses Choose. Mia Lykke Nielsen..3WOtcE9hMMM",
+          "name": "Mia Lykke Nielsen trains Dutch show jumper. When Horses Choose. Mia Lykke Nielsen.",
+          "artists": [{ "__model__": "Artist", "name": "When Horses Choose" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 1486000,
+          "comment": "3WOtcE9hMMM"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/The Kladruber Horses of the Danish Royal Family.QPdhIVw_sUI",
+          "name": "The Kladruber Horses of the Danish Royal Family",
+          "artists": [{ "__model__": "Artist", "name": "Barbara Weibel" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 81000,
+          "comment": "QPdhIVw_sUI"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Mia Lykke Nielsen trains small problem pony. When Horses Choose. Mia Lykke Nielsen..ITpWiOaf_r4",
+          "name": "Mia Lykke Nielsen trains small problem pony. When Horses Choose. Mia Lykke Nielsen.",
+          "artists": [{ "__model__": "Artist", "name": "When Horses Choose" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 948000,
+          "comment": "ITpWiOaf_r4"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Lady Gaga.leGt4huCqFs",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Lady Gaga",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 534000,
+          "comment": "leGt4huCqFs"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Habanero.Gxmy1ZMacRk",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Habanero",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 427000,
+          "comment": "Gxmy1ZMacRk"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Nograj Doesnt Like Betting on Horse - Danish Sait Prank Call 101.P_UJ94cV-zk",
+          "name": "Nograj Doesn't Like Betting on Horse - Danish Sait Prank Call 101",
+          "artists": [{ "__model__": "Artist", "name": "Video Sandwich" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 73000,
+          "comment": "P_UJ94cV-zk"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Jakas Don Louvre.HFwUCZfe374",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Jakas Don Louvre",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 348000,
+          "comment": "HFwUCZfe374"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Slbkgards Santino.Ki22vkrymNw",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Sl\u00e6b\u00e6kg\u00e5rd's Santino",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 341000,
+          "comment": "Ki22vkrymNw"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Zaragossa.cSEIz6B-H1w",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Zaragossa",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 379000,
+          "comment": "cSEIz6B-H1w"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Hot Shot W.uVWcLt2Jo3s",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Hot Shot W",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 406000,
+          "comment": "uVWcLt2Jo3s"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/BUYING HORSE - Danish Warmblood.aYte98EeDtM",
+          "name": "BUYING HORSE - Danish Warmblood",
+          "artists": [{ "__model__": "Artist", "name": "Connie Shadowforest" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 262000,
+          "comment": "aYte98EeDtM"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Zalto.aBVgyaM--Rc",
+          "name": "Danish Warmblood Young Horse Championship 2014 - Carl Hester testing Zalto",
+          "artists": [{ "__model__": "Artist", "name": "myhorsetvEN" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 303000,
+          "comment": "aBVgyaM--Rc"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Sports Horse.7I-Bz9bX_K8",
+          "name": "Danish Sports Horse",
+          "artists": [{ "__model__": "Artist", "name": "HayleyPile" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 66000,
+          "comment": "7I-Bz9bX_K8"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish royals attend horse association parade in Grasten.Gn8nZAI1Zas",
+          "name": "Danish royals attend horse association parade in Gr\u00e5sten",
+          "artists": [
+            { "__model__": "Artist", "name": "Scandinavian Royalty" }
+          ],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 51000,
+          "comment": "Gn8nZAI1Zas"
+        },
+        {
+          "__model__": "Track",
+          "uri": "youtube:video/Danish Warmblood Horse Picture Ideas Of Horses.oQg7QwyGOtM",
+          "name": "Danish Warmblood Horse | Picture Ideas Of Horses",
+          "artists": [{ "__model__": "Artist", "name": "Pinodan safras" }],
+          "album": { "__model__": "Album", "name": "YouTube Video" },
+          "length": 70000,
+          "comment": "oQg7QwyGOtM"
+        }
+      ]
+    },
+    {
+      "__model__": "SearchResult",
+      "uri": "tunein:search",
+      "tracks": [
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t130120668",
+          "name": "1 Apr 2019",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t130120668",
+              "name": "Ep. 20: The Danish Horse [1 Apr 2019]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t130120668",
+            "name": "Ep. 20: The Danish Horse [1 Apr 2019]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t130120690",
+          "name": "1 Apr 2019",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t130120690",
+              "name": "Ep. 20: The Danish Horse [1 Apr 2019]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t130120690",
+            "name": "Ep. 20: The Danish Horse [1 Apr 2019]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t109307430",
+          "name": "12 Oct 2016",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t109307430",
+              "name": "#202 - Danish & O'Neil & ME [12 Oct 2016]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t109307430",
+            "name": "#202 - Danish & O'Neil & ME [12 Oct 2016]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t112457797",
+          "name": "20 Mar 2017",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t112457797",
+              "name": "NSW Trainer Kris Lees [20 Mar 2017]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t112457797",
+            "name": "NSW Trainer Kris Lees [20 Mar 2017]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t122817181",
+          "name": "28 Jun 2018",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t122817181",
+              "name": "Music and Amusement 3rd Episode / 06-28-18 [28 Jun 2018]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t122817181",
+            "name": "Music and Amusement 3rd Episode / 06-28-18 [28 Jun 2018]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t122817094",
+          "name": "28 Jun 2018",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t122817094",
+              "name": "Music and Amusement 3rd Episode / 06-28-18 [28 Jun 2018]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t122817094",
+            "name": "Music and Amusement 3rd Episode / 06-28-18 [28 Jun 2018]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t115357664",
+          "name": "21 Jul 2017",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t115357664",
+              "name": "Jazz Lives 07-20-2017 with Dennis Rider [21 Jul 2017]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t115357664",
+            "name": "Jazz Lives 07-20-2017 with Dennis Rider [21 Jul 2017]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t134600878",
+          "name": "17 Jul 2014",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t134600878",
+              "name": "Horsemanship Radio Episode 20 by Index Fund Advisors IFA.com \u2013 Wild Mustangs with Francesca Wood and Western Kids Camps in Denmark [17 Jul 2014]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t134600878",
+            "name": "Horsemanship Radio Episode 20 by Index Fund Advisors IFA.com \u2013 Wild Mustangs with Francesca Wood and Western Kids Camps in Denmark [17 Jul 2014]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t126572838",
+          "name": "7 Nov 2018",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t126572838",
+              "name": "Married At First Sight: Honeymoon Island S:1 Suite Life; Breakdown to Breakthrough E:2 & E:3 [7 Nov 2018]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t126572838",
+            "name": "Married At First Sight: Honeymoon Island S:1 Suite Life; Breakdown to Breakthrough E:2 & E:3 [7 Nov 2018]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t106836039",
+          "name": "13 Jun 2016",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t106836039",
+              "name": "106: OPEN UP YOUR MIND to a different orientation (Noah Harley Part 1) [13 Jun 2016]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t106836039",
+            "name": "106: OPEN UP YOUR MIND to a different orientation (Noah Harley Part 1) [13 Jun 2016]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t127743900",
+          "name": "4 Dec 2018",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t127743900",
+              "name": "Married At First Sight: Happily Ever After S:1 Routine Maintenance E:6 Review [4 Dec 2018]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t127743900",
+            "name": "Married At First Sight: Happily Ever After S:1 Routine Maintenance E:6 Review [4 Dec 2018]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t132780207",
+          "name": "8 Aug 2019",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t132780207",
+              "name": "\"One Month Down, Never to Go\" Season 9 Episode 9 'Married at First Sight' Review [8 Aug 2019]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t132780207",
+            "name": "\"One Month Down, Never to Go\" Season 9 Episode 9 'Married at First Sight' Review [8 Aug 2019]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t106863050",
+          "name": "14 Jun 2016",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t106863050",
+              "name": "107: Start small and start steady (Noah Harley Part 2) [14 Jun 2016]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t106863050",
+            "name": "107: Start small and start steady (Noah Harley Part 2) [14 Jun 2016]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t39179966",
+          "name": "4 Jun 2012",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t39179966",
+              "name": "Gig Alert: Quadron [4 Jun 2012]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t39179966",
+            "name": "Gig Alert: Quadron [4 Jun 2012]"
+          }
+        },
+        {
+          "__model__": "Track",
+          "uri": "tunein:station:t133906574",
+          "name": "28 Nov 2016",
+          "artists": [
+            {
+              "__model__": "Artist",
+              "uri": "tunein:station:t133906574",
+              "name": "THE LAKE at BY THE LAKE with Laid Back [28 Nov 2016]"
+            }
+          ],
+          "album": {
+            "__model__": "Album",
+            "uri": "tunein:station:t133906574",
+            "name": "THE LAKE at BY THE LAKE with Laid Back [28 Nov 2016]"
+          }
+        }
+      ]
+    }
+  ]
+}
