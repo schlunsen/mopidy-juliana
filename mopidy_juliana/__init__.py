@@ -69,5 +69,5 @@ def juliana_factory(config, core):
         (r"/ws/?", WebsocketHandler, {"core": core, "config": config}),
         (r"/assets/(.*)", StaticFileHandler, {"path": path / "assets"}),
         (r"/((.*)(?:css|js|json|map)$)", StaticFileHandler, {"path": path}),
-        (r"/(.*)", StaticFileHandler, {"path": path / "index.html"}),
+        (r"/(.*)", ReactRouterHandler, {"path": path / "index.html"}),
     ]
