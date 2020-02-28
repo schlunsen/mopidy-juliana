@@ -46,6 +46,7 @@
 
 <script>
 import BottomBarPlayer from '~/components/BottomBarPlayer.vue'
+require("vue-cli-plugin-vuetify-preset-basil/preset");
 export default {
   data() {
     return {
@@ -63,6 +64,11 @@ export default {
           title: "Search",
           to: "/search"
         },
+        {
+          icon: "mdi-settings",
+          title: "Settings",
+          to: "/settings"
+        },
 
       ],
       miniVariant: false,
@@ -78,7 +84,7 @@ export default {
 </script>
 <style lang="stylus" scoped>
 .bottom-player {
-  position: absolute; 
+  position: fixed; 
   z-index: 22;
   bottom: 0px;
   height: 50px;

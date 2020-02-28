@@ -1,7 +1,8 @@
 <template>
   <div>
     <v-btn v-if="currentUri" @click="back()">Back</v-btn>
-    <v-data-table :headers="headers" :items="items">
+    <v-text-field outlined v-model="search" />
+    <v-data-table :search="search" :headers="headers" :items="items">
       <template v-slot:item.name="{ item }">
         <p style="cursor: pointer;" @click="gotoItem(item)">{{item.name}}</p>
       </template>
@@ -16,6 +17,7 @@ export default {
   data: function() {
     return {
       lastUri: null,
+      search: '',
       currentUri: null,
       items: [],
       headers: [

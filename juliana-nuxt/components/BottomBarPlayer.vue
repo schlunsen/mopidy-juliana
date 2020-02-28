@@ -29,7 +29,13 @@ export default {
     this.mopidy = await this.$getMopidy();
     this.mopidy.on("state", async () => {
       this.init();
+      this.interval = setInterval(() => {
+        this.init()
+      }, 5000);
     });
+  },
+  destroyed() {
+    clearInterval(this.interval)
   },
 
   methods: {

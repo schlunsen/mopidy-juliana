@@ -1,14 +1,14 @@
 {
   "name": "juliana-nuxt",
   "version": "1.0.0",
+  "private": true,
   "description": "My striking Nuxt.js project",
   "author": "Rasmus Schlünsen",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "nuxt",
     "generate": "nuxt generate",
+    "start": "nuxt start",
     "test": "jest"
   },
   "dependencies": {
@@ -17,15 +17,22 @@
     "@nuxtjs/toast": "^3.3.0",
     "mopidy": "^1.0.1",
     "nuxt": "^2.0.0",
-    "verge": "^1.10.2"
+    "verge": "^1.10.2",
+    "vue-cli": "^2.9.6",
+    "vuetify": "^2.2.15"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.11.0",
     "@vue/test-utils": "^1.0.0-beta.27",
     "babel-jest": "^24.1.0",
     "jest": "^24.1.0",
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.1",
+    "sass-loader": "^8.0.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
+    "vue-cli-plugin-vuetify-preset-basil": "~1.0.3",
     "vue-jest": "^4.0.0-0"
   }
 }
