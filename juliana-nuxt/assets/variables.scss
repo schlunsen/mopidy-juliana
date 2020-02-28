@@ -1,108 +1,112 @@
 @import '~vuetify/src/styles/styles.sass';
 
-// Basil specific variables
-$basil-font-size: 16;
-$basil-tab-font-size: 1rem;
-$basil-tab-padding: 0 10px;
-$basil-tabs-slider-border-radius: 24px;
-$basil-tabs-slider-border-width: 2px;
-$basil-tabs-slider-wrapper-min-height: 40px;
-$basil-tabs-slider-wrapper-min-width: 100%;
-$basil-tabs-tab-width: 100%;
+// Rally specific variables
+$rally-box-shadow: none;
+$rally-dialog-background-color: #1F1E1F;
+$rally-font-size: 16;
+$rally-tabs-slider-background: transparent;
+$rally-text-color: #FFFFFF;
 
 // Preset variables
-$body-font-family: 'Montserrat', sans-serif;
+$body-font-family: 'Roboto Condensed', sans-serif;
+$heading-font-family: 'Eczar', sans-serif;
 $border-radius-root: 0;
+$btn-font-size: #{14 / $rally-font-size}rem;
 $btn-font-weight: 700;
-$btn-icon-font-size: #{14 / $basil-font-size}rem;
-$btn-outline-border-width: 2px;
+$card-box-shadow: none;
+$dialog-card-subtitle-padding: 24px;
+$dialog-card-text-padding: 24px;
+$dialog-card-title-padding: 24px;
 $dialog-elevation: 0;
-$heading-font-family: 'Lekton', sans-serif;
 $headings: (
   'h1':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{96 / $basil-font-size}rem,
-    'weight': 600
+    'size': #{96 / $rally-font-size}rem,
+    'weight': 300
   ),
   'h2':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{60 / $basil-font-size}rem,
-    'weight': 600
+    'size': #{60 / $rally-font-size}rem,
+    'weight': 300
   ),
   'h3':(
-    'font-family': $body-font-family,
+    'font-family': $heading-font-family,
     'letter-spacing': initial,
-    'size': #{48 / $basil-font-size}rem,
-    'weight': 600
+    'size': #{48 / $rally-font-size}rem,
+    'weight': 400
   ),
   'h4':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{34 / $basil-font-size}rem,
-    'weight': 600
+    'size': #{34 / $rally-font-size}rem,
+    'weight': 400
   ),
   'h5':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{24 / $basil-font-size}rem,
-    'weight': 500
+    'size': #{24 / $rally-font-size}rem,
+    'weight': 400
   ),
   'h6':(
-    'font-family': $heading-font-family,
-    'letter-spacing': initial,
-    'size': #{21 / $basil-font-size}rem,
-    'weight': 700
-  ),
-  'subtitle-1':(
-    'font-family': $heading-font-family,
-    'letter-spacing': initial,
-    'size': #{17 / $basil-font-size}rem,
-    'weight': 700
-  ),
-  'subtitle-2':(
-    'font-family': $heading-font-family,
-    'letter-spacing': initial,
-    'size': #{15 / $basil-font-size}rem,
-    'weight': 700
-  ),
-  'body-1':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{16 / $basil-font-size}rem,
-    'weight': 600
+    'size': #{20 / $rally-font-size}rem,
+    'weight': 500
+  ),
+  'subtitle-1':(
+    'font-family': $body-font-family,
+    'letter-spacing': initial,
+    'size': #{16 / $rally-font-size}rem,
+    'weight': 400
+  ),
+  'subtitle-2':(
+    'font-family': $body-font-family,
+    'letter-spacing': initial,
+    'size': #{14 / $rally-font-size}rem,
+    'weight': 500
+  ),
+  'body-1':(
+    'font-family': $heading-font-family,
+    'letter-spacing': initial,
+    'size': #{16 / $rally-font-size}rem,
+    'weight': 400
   ),
   'body-2':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{14 / $basil-font-size}rem,
-    'weight': 400
+    'size': #{14 / $rally-font-size}rem,
+    'weight': 300
   ),
   'caption':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{12 / $basil-font-size}rem,
-    'weight': 500
+    'size': #{12 / $rally-font-size}rem,
+    'weight': 400
   ),
   'overline':(
     'font-family': $body-font-family,
     'letter-spacing': initial,
-    'size': #{10 / $basil-font-size}rem,
+    'size': #{10 / $rally-font-size}rem,
     'weight': 400
   )
 );
-$material-light: (
+$material-dark: (
   'status-bar': (
-    'regular': #ECE9D5
+    'regular': #27272f
   ),
-  'background': #FFFBE6,
-  'cards': rgba(185, 228, 201, .1),
-  'text': (
-    'primary': #356859
-  )
+  'background': #33333d,
+  'cards': #373740,
+  'dividers': #33333d,
+  'tabs': rgba(255, 255, 255, .3)
 );
-$tabs-bar-background-color: transparent;
-$tabs-bar-height: 22px;
-$tabs-item-vertical-height: 40px;
-$tabs-item-letter-spacing: 0;
+$material-light: (
+  'dividers': rgba(255, 255, 255, .12)
+);
+$navigation-drawer-border-width: 0;
+$snackbar-background-color: rgba(39, 39, 47, .9);
+$tab-font-size: 1.25rem;
+$tab-font-weight: 500;
+$tabs-item-min-width: 0;
+$tabs-bar-background-color: map-get($material-dark, 'background');
