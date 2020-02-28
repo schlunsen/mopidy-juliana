@@ -11,7 +11,7 @@ recursive-include .circleci *
 recursive-include .github *
 
 include mopidy_*/ext.conf
-include mopidy_juliana/static
+recursive-include mopidy_iris/static *
 
 recursive-include tests *.py
 
