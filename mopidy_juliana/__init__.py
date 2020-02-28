@@ -33,17 +33,41 @@ class Extension(ext.Extension):
 
         # TODO: Edit or remove entirely
         from .frontend import JulianaFrontend
-        registry.add("frontend", JulianaFrontend)
+        
 
         # TODO: Edit or remove entirely
         # from .backend import FoobarBackend
         # registry.add("backend", FoobarBackend)
 
         # TODO: Edit or remove entirely
+        # registry.add(
+        #     "http:static",
+        #     {
+        #         "name": self.ext_name,
+        #         "path": str(pathlib.Path(__file__).parent / "static"),
+        #     },
+        # )
+
         registry.add(
-            "http:static",
-            {
-                "name": self.ext_name,
-                "path": str(pathlib.Path(__file__).parent / "static"),
-            },
+            "http:app", {"name": self.ext_name, "factory": juliana_factory}
         )
+
+        registry.add("frontend", JulianaFrontend)
+
+
+##
+# Frontend factory
+##
+def juliana_factory(config, core):
+    from tornado.web import StaticFileHandler
+    from .handlers import HttpHandler, ReactRouterHandler, WebsocketHandler
+
+    path = pathlib.Path(__file__).parent / "static"
+
+    return [
+        (r"/http/([^/]*)", HttpHandler, {"core": core, "config": config}),
+        (r"/ws/?", WebsocketHandler, {"core": core, "config": config}),
+        (r"/assets/(.*)", StaticFileHandler, {"path": path / "assets"}),
+        (r"/((.*)(?:css|js|json|map)$)", StaticFileHandler, {"path": path}),
+        (r"/(.*)", ReactRouterHandler, {"path": path / "index.html"}),
+    ]
