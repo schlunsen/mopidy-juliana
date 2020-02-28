@@ -25,7 +25,7 @@ if sys.platform == "win32":
 logger = logging.getLogger(__name__)
 
 
-class JuliananCore(pykka.ThreadingActor):
+class JulianaCore(pykka.ThreadingActor):
     version = ""
     spotify_token = False
     queue_metadata = {}
