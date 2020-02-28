@@ -72,9 +72,10 @@ class JulianaCore(pykka.ThreadingActor):
     # @return Dict
     ##
     def load_from_file(self, name):
-        file_path = Path(self.config["juliana"]["data_dir"]) / ("%s.pkl" % name)
+        
 
         try:
+            file_path = Path(self.config["juliana"]["data_dir"]) / ("%s.pkl" % name)
             with file_path.open("rb") as f:
                 content = pickle.load(f)
                 f.close()
@@ -90,9 +91,10 @@ class JulianaCore(pykka.ThreadingActor):
     # @return void
     ##
     def save_to_file(self, dict, name):
-        file_path = Path(self.config["juliana"]["data_dir"]) / ("%s.pkl" % name)
+        
 
         try:
+            file_path = Path(self.config["juliana"]["data_dir"]) / ("%s.pkl" % name)
             with file_path.open("wb") as f:
                 pickle.dump(dict, f, pickle.HIGHEST_PROTOCOL)
                 pickle.close()
