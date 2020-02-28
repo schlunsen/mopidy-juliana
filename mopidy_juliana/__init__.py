@@ -32,12 +32,12 @@ class Extension(ext.Extension):
         # in a single extension.
 
         # TODO: Edit or remove entirely
-        from .frontend import FoobarFrontend
-        registry.add("frontend", FoobarFrontend)
+        from .frontend import JulianaFrontend
+        registry.add("frontend", JulianaFrontend)
 
         # TODO: Edit or remove entirely
-        from .backend import FoobarBackend
-        registry.add("backend", FoobarBackend)
+        # from .backend import FoobarBackend
+        # registry.add("backend", FoobarBackend)
 
         # TODO: Edit or remove entirely
         registry.add(
