@@ -19,6 +19,7 @@
     "nuxt": "^2.0.0",
     "verge": "^1.10.2",
     "vue-cli": "^2.9.6",
+    "vue-cli-plugin-vuetify-preset-rally": "^1.0.3",
     "vuetify": "^2.2.15"
   },
   "devDependencies": {

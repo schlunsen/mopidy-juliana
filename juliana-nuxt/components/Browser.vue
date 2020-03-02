@@ -29,6 +29,9 @@ export default {
     };
   },
   mounted() {
+      this.$root.$on('gotoItem', () => {
+          this.search = '';
+      })
     this.mopidy = this.$getMopidy();
     if (this.$store.state.cache_store.root) {
       if (this.$store.state.cache_store.root.length) {

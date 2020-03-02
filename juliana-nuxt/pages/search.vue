@@ -64,9 +64,9 @@ export default {
     this.mopidy = this.$getMopidy();
   },
   methods: {
-      gotoAlbum(item) {
-console.info(item)
-      },
+    gotoAlbum(item) {
+      console.info(item);
+    },
     searchMopidy() {
       let searchQuery = {
         query: {

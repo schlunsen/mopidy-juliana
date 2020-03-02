@@ -45,8 +45,9 @@
 </template>
 
 <script>
-import BottomBarPlayer from '~/components/BottomBarPlayer.vue'
-require("vue-cli-plugin-vuetify-preset-basil/preset");
+import BottomBarPlayer from '~/components/BottomBarPlayer2.vue'
+require("vue-cli-plugin-vuetify-preset-rally/preset");
+
 export default {
   data() {
     return {
@@ -58,6 +59,11 @@ export default {
           icon: "mdi-apps",
           title: "Dashboard",
           to: "/"
+        },
+        {
+          icon: "mdi-playlist",
+          title: "Playlists",
+          to: "/playlists"
         },
         {
           icon: "mdi-search",
@@ -83,13 +89,5 @@ export default {
 };
 </script>
 <style lang="stylus" scoped>
-.bottom-player {
-  position: fixed; 
-  z-index: 22;
-  bottom: 0px;
-  height: 50px;
-  width: 100%;
-  background: red;
-  max-width: none;
-}
+
 </style>
