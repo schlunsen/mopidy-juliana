@@ -47,12 +47,13 @@
 <script>
 import BottomBarPlayer from '~/components/BottomBarPlayer2.vue'
 require("vue-cli-plugin-vuetify-preset-rally/preset");
+import verge from 'verge';
 
 export default {
   data() {
     return {
       clipped: false,
-      drawer: false,
+      drawer: verge.viewportW() > 1200,
       fixed: false,
       items: [
         {

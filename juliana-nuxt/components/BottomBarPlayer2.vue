@@ -21,7 +21,7 @@
           style="margin:0; text-align:center;"
           v-if="currentTrack && currentTrack.artists"
         >{{currentTrack.artists.map(a => a.name).join(',')}} - {{currentTrack.name}}</p>
-        <p v-else>{{currentTrack.name}}</p>
+        <p v-else>{{currentTrack && currentTrack.name}}</p>
         <v-slider
           v-if="hasSlider"
           color="white"

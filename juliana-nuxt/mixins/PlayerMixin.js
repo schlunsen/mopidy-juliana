@@ -12,6 +12,15 @@ const PlayerMixin = {
       if (item.type == "track" || item.__model__ == "Track") {
         this.playItem(item);
       } else {
+        if (this.folders.find((e => e.uri == item.uri))) {
+          while (this.folders[this.folders.length -1].uri !== item.uri) {
+              this.folders.pop()
+          }
+
+        } else {
+          this.folders.push(item)
+        }
+        
         this.lastUri = this.currentUri;
         this.currentUri = item.uri;
         this.mopidy.library

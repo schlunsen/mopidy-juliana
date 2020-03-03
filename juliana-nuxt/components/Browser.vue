@@ -1,10 +1,21 @@
 <template>
   <div>
+    <v-breadcrumbs :items="folders">
+       <template v-slot:item="{ item }">
+      <v-breadcrumbs-item
+        @click="gotoItem(item)"
+        :disabled="item.disabled"
+        style="cursor: pointer;"
+      >
+        {{ item.name }}
+      </v-breadcrumbs-item>
+    </template>
+    </v-breadcrumbs>
     <v-btn v-if="currentUri" @click="back()">Back</v-btn>
     <v-text-field outlined v-model="search" />
-    <v-data-table :search="search" :headers="headers" :items="items">
+    <v-data-table :search="search" :headers="headers" :items="items" :items-per-page="10000">
       <template v-slot:item.name="{ item }">
-        <p style="cursor: pointer;" @click="gotoItem(item)">{{item.name}}</p>
+        <p v-if="item" style="cursor: pointer;" @click="gotoItem(item)">{{item.name}}</p>
       </template>
     </v-data-table>
   </div>
@@ -18,6 +29,10 @@ export default {
     return {
       lastUri: null,
       search: '',
+      folders: [{
+        name: 'Root',
+        uri: null
+      }],
       currentUri: null,
       items: [],
       headers: [
@@ -52,8 +67,9 @@ export default {
   },
   methods: {
     async back() {
+      let lastItem = this.folders.pop()
       this.gotoItem({
-        uri: this.lastUri
+        uri: lastItem.uri
       });
     }
   }
