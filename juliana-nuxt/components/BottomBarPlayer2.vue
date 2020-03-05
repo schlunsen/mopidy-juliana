@@ -40,6 +40,10 @@
         class="flex-row-reverse d-flex align-item-center"
         style="align-items: center; margin-bottom: 20px;"
       >
+        <v-btn small @click="playNext()" style="margin: 0px 10px 5px 0;">
+          <v-icon>mdi-skip-next</v-icon>
+        </v-btn>
+
         <v-btn small @click="togglePlay()" style="margin: 0px 10px 5px 0;">
           <span v-if="state === 'playing'">
             <v-icon>mdi-pause</v-icon>
@@ -55,6 +59,9 @@
           <span v-else>
             <v-icon>mdi-volume-plus</v-icon>
           </span>
+        </v-btn>
+        <v-btn small @click="playPrev()" style="margin: 0px 10px 5px 0;">
+          <v-icon>mdi-skip-previous</v-icon>
         </v-btn>
       </v-col>
     </v-row>
@@ -88,10 +95,16 @@ export default {
   },
 
   methods: {
+    playNext() {
+      this.mopidy.playback.next()
+    },
+    playPrev() {
+      this.mopidy.playback.previous()
+    },
     sliderChange() {
       this.mopidy.playback.seek({
-          time_position: this.trackSlider
-      })
+        time_position: this.trackSlider
+      });
     },
     async init() {
       this.state = await this.mopidy.playback.getState();

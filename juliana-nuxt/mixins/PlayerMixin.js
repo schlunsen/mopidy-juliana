@@ -3,7 +3,7 @@ const PlayerMixin = {
     async playItem(item) {
       this.$toast.info("Playing " + item.name, { duration: 2000 });
       await this.mopidy.tracklist.clear();
-      await this.mopidy.tracklist.add({ uris: [item.uri] });
+      await this.mopidy.tracklist.add({ uris: [item.uri,...this.items.map(i => i.uri)] });
       await this.mopidy.playback.play();
     },
     async gotoItem(item) {
