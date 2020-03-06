@@ -33,7 +33,7 @@ export default {
       }
     }
   },
-  mounted() {
+  async mounted() {
     this.mopidy = await this.$getMopidy();
 
     setTimeout(async () => {
