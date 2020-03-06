@@ -1,14 +1,14 @@
 import Vue from "vue";
-import { WSController } from "~/libs/WSController.js";
 import Mopidy from 'mopidy'
 let mopidy;
 
-export default ({ app }, inject) => {
-  inject("getMopidy", () => {
+export default ({ app, env }, inject) => {
+  inject("getMopidy", async () => {
       if (!mopidy) {
+        console.info(env)
         
         mopidy = new Mopidy({
-            webSocketUrl: "ws://192.168.0.150:6680/mopidy/ws/",
+            webSocketUrl: "ws://" + env.api +"/mopidy/ws/",
           });
       }
       return mopidy

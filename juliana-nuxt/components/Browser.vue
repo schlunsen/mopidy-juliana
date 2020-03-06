@@ -43,11 +43,11 @@ export default {
       ]
     };
   },
-  mounted() {
+  async mounted() {
       this.$root.$on('gotoItem', () => {
           this.search = '';
       })
-    this.mopidy = this.$getMopidy();
+    this.mopidy = await this.$getMopidy();
     if (this.$store.state.cache_store.root) {
       if (this.$store.state.cache_store.root.length) {
         this.items = this.$store.state.cache_store.root;

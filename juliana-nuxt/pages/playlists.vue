@@ -36,8 +36,8 @@ export default {
   mounted() {
     this.mopidy = this.$getMopidy();
 
-    setTimeout(() => {
-      window.mopidy = this.mopidy;
+    setTimeout(async () => {
+      window.mopidy = await this.mopidy;
       this.mopidy.playlists.asList().then(res => {
         this.items = res;
         console.info(res, "RES");

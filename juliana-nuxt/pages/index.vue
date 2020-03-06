@@ -1,16 +1,26 @@
 <template>
   <v-container fluid>
     <h1>Juliana</h1>
-    <Browser />
-
+    <v-row>
+      <v-col cols="12">
+        <TrackImageInfo />
+      </v-col>
+      <v-col cols="12" md="6">
+        <Browser />
+      </v-col>
+      <v-col cols="12" md="6">
+      </v-col>
+    </v-row>
+    
   </v-container>
 </template>
 
 <script>
 import Browser from "~/components/Browser.vue";
+import TrackImageInfo from "~/components/TrackImageInfo.vue";
 export default {
-  mounted() {
-    let mopidy = this.$getMopidy();
+  async mounted() {
+    let mopidy = await this.$getMopidy();
     window.mopidy = mopidy;
     mopidy.on("state:online", () => {
       mopidy.library.getHistory();
@@ -20,7 +30,8 @@ export default {
     });
   },
   components: {
-    Browser
+    Browser,
+    TrackImageInfo
   }
 };
 </script>

@@ -33,6 +33,10 @@ export default {
   router: {
     base: process.env.NODE_ENV === "dev" ? "/" : "/juliana/"
   },
+  env: {
+    //api: process.env.NODE_ENV === "dev" ? "192.168.0.150:6680" : ''
+    api: "192.168.0.150:6680"
+  },
   /*
    ** Global CSS
    */
@@ -55,6 +59,11 @@ export default {
     "@nuxtjs/toast",
     "@nuxtjs/style-resources"
   ],
+  pwa: {
+    manifest: {
+      display: 'fullscreen'
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
