@@ -34,7 +34,7 @@ export default {
     }
   },
   mounted() {
-    this.mopidy = this.$getMopidy();
+    this.mopidy = await this.$getMopidy();
 
     setTimeout(async () => {
       window.mopidy = await this.mopidy;
