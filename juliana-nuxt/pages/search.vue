@@ -60,8 +60,8 @@ export default {
       ]
     };
   },
-  mounted() {
-    this.mopidy = this.$getMopidy();
+  async mounted() {
+    this.mopidy = await this.$getMopidy();
   },
   methods: {
     gotoAlbum(item) {
