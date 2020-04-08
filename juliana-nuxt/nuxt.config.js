@@ -62,8 +62,7 @@ export default {
   pwa: {
     manifest: {
       name: 'Juliana',
-      lang: 'en',
-      display: 'fullscreen'
+      lang: 'en'
     },
     workbox: {
 
