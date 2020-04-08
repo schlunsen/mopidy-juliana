@@ -31,7 +31,7 @@ export default {
    */
   loading: { color: "#fff" },
   router: {
-    base: process.env.NODE_ENV === "dev" ? "/" : "/juliana/"
+    base: process.env.NODE_ENV === "dev" ? "/" : "/"
   },
   env: {
     api: process.env.NODE_ENV === "dev" ? "192.168.0.150:6680" : 'juliana.schlunsen.com'
@@ -54,8 +54,8 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    "@nuxtjs/axios",
     "@nuxtjs/pwa",
+    "@nuxtjs/axios",
     "@nuxtjs/toast",
     "@nuxtjs/style-resources"
   ],
