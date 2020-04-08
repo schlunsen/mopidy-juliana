@@ -61,7 +61,7 @@ export default {
   ],
   pwa: {
     manifest: {
-      title: 'Juliana',
+      name: 'Juliana',
       lang: 'en',
       display: 'fullscreen'
     },
