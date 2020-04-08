@@ -12,7 +12,7 @@ class WSController {
         this.$store = app.store;
         this.$app = app.store;
 
-        this.api_domain = `${domain}/mopidy/ws/`
+        this.api_domain = `${domain}/juliana/ws/`
         
         this.connected = false;
 

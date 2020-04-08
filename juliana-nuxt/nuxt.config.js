@@ -34,8 +34,8 @@ export default {
     base: process.env.NODE_ENV === "dev" ? "/" : "/juliana/"
   },
   env: {
-    //api: process.env.NODE_ENV === "dev" ? "192.168.0.150:6680" : ''
-    api: "192.168.0.150:6680"
+    api: process.env.NODE_ENV === "dev" ? "192.168.0.150:6680" : 'juliana.schlunsen.com'
+    //api: "192.168.0.150:6680"
   },
   /*
    ** Global CSS
