@@ -8,7 +8,7 @@ export default ({ app, env }, inject) => {
         console.info(env)
         
         mopidy = new Mopidy({
-            webSocketUrl: "wss://" + env.api +"/juliana/ws/",
+            webSocketUrl: "wss://" + env.api +"/mopidy/ws/",
           });
       }
       return mopidy
